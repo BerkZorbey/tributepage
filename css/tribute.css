@@ -1,19 +1,37 @@
+:root {
+    --main-background: #f3f7e4af;
+    --body-background: #769fcd7a;
+    --img-background: #9fd3f362;
+    --li-text-color: #290b50cc;
+    --li-backgroundcolor: #d3d4cd8f;
+    --boxshadow-color: #a7c5d877;
+    --li-marker-color: #7C83FD;
+    --li-border-color: #d3d4cd83;
+    --img-border-color: #9fd3f362;
+    --main-border-color: #769fcd7a;
+    --title-textshadow-color: rgba(149, 181, 192, 0.384);
+    --titletext-textshadow-color: rgba(74, 84, 87, 0.384);
+    --li-text-family: Comic Sans MS;
+    --img-text-family: system-ui;
+    --body-text-family: sans-serif;
+}
+
 html {
     font-size: 10px;
 }
 
 body {
-    background-color: #769fcd7a;
+    background-color: var(--body-background, #bbcfe6);
     text-align: center;
-    font-family: sans-serif;
+    font-family: var(--body-text-family, Lucida Sans, Optima);
     font-size: 1.8rem;
 
 
 }
 
 #main {
-    background-color: #f3f7e4af;
-    border: 10px double #769fcd7a;
+    background-color: var(--main-background, #e9f9f0);
+    border: 10px double var(--main-border-color, #a8bacf);
     border-radius: 10px;
     margin: auto;
     margin-top: 15px;
@@ -24,21 +42,21 @@ body {
 #title {
     padding-top: 20px;
     margin-bottom: 0px;
-    text-shadow: 7px 7px 1px rgba(149, 181, 192, 0.384);
+    text-shadow: 7px 7px 1px var(--title-textshadow-color, #bfd3d9);
 }
 
 #title-text {
-    text-shadow: 2px 2px 1px rgba(74, 84, 87, 0.384);
+    text-shadow: 2px 2px 1px var(--titletext-textshadow-color, #a5aaab);
 }
 
 blockquote {
     font-weight: 600;
-    font-family: system-ui;
-    border: 4px ridge #9fd3f362;
+    font-family: var(--img-text-family, Segoe Print, Tunga);
+    border: 4px ridge var(--img-border-color, #cfe9f9);
     border-radius: 10px;
-    background-color: #9fd3f362;
+    background-color: var(--img-background, #cff1f9);
     padding-top: 20px;
-    box-shadow: 10px 10px 10px 0px #a7c5d877;
+    box-shadow: 10px 10px 10px 0px var(--boxshadow-color, #c1d6e4);
 }
 
 #img-div {
@@ -65,22 +83,22 @@ ul {
 
 
 li {
-    font-family: cursive;
-    border: 2px solid #d3d4cd83;
+    font-family: var(--li-text-family, cursive, MV Boli, Segoe Print);
+    border: 2px solid var(--li-border-color, #dcddd7);
     line-height: 30px;
     text-align: initial;
     margin: 30px;
     padding: 20px 20px 20px 20px;
-    color: #290b50cc;
-    background-color: #d3d4cd8f;
-    box-shadow: 10px 10px 10px 0px #a7c5d877;
+    color: var(--li-text-color, #3e2362);
+    background-color: var(--li-backgroundcolor, #d7d8d2);
+    box-shadow: 10px 10px 10px 0px var(--boxshadow-color, #c1d6e4);
 }
 
 li::before {
 
     content: "\2666";
     position: relative;
-    color: #7C83FD;
+    color: var(--li-marker-color, #898ffd);
     padding: 10px;
     margin-top: 60px;
     font-size: 35px;
@@ -127,11 +145,11 @@ li:hover {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-play-state: paused;
- -o-animation-name: jumpingdots;
- -o-animation-timing-function: linear;
- -o-animation-duration: 0.8s;
- -o-animation-iteration-count: infinite;
- -o-animation-play-state: paused;
+    -o-animation-name: jumpingdots;
+    -o-animation-timing-function: linear;
+    -o-animation-duration: 0.8s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-play-state: paused;
 }
 
 .dots1:hover+.dots span {
@@ -263,7 +281,7 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    
+
 }
 
 #wiki {
@@ -271,7 +289,7 @@ footer {
     margin-left: 50px;
 }
 
-@media(max-width:1366px){
+@media(max-width:1366px) {
 
     img {
         width: 100%;
@@ -339,54 +357,63 @@ footer {
 }
 
 @media(max-width:510px) {
- li{
-     position: relative;
-     right:25px;
-     padding-right: 15px;
- }
- .epilog em{
-     position: relative;
-     right: 20px;
- }
- img{
-     width: 210px;
-     height:150px;
- }
- #img-caption{
-     
-  font-size:0.8em;
-  font-weight: 500;
-  
-  width:100%;
-  
-  
- }
- blockquote{
-     margin:15px;
-     padding: 0px;
- }
- #wiki{
-     position: relative;
-     margin-left: 40px;
- }
+    li {
+        position: relative;
+        right: 25px;
+        padding-right: 15px;
+    }
+
+    .epilog em {
+        position: relative;
+        right: 20px;
+    }
+
+    img {
+        width: 210px;
+        height: 150px;
+    }
+
+    #img-caption {
+
+        font-size: 0.8em;
+        font-weight: 500;
+
+        width: 100%;
+
+
+    }
+
+    blockquote {
+        margin: 15px;
+        padding: 0px;
+    }
+
+    #wiki {
+        position: relative;
+        margin-left: 40px;
+    }
 }
-@media(max-width:360px){
-    img{
+
+@media(max-width:360px) {
+    img {
         width: 100%;
         height: 100%;
     }
-    .epilog em{
+
+    .epilog em {
         position: relative;
         right: 30px;
     }
 }
-@media(max-width:320px){
-    li{
+
+@media(max-width:320px) {
+    li {
         font-size: 12px;
         font-weight: bolder;
         line-height: 35px;
     }
-    #img-caption{
+
+    #img-caption {
         font-size: 12px;
         font-weight: 500;
     }
