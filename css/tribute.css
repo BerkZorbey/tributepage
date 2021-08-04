@@ -140,53 +140,52 @@ li:hover {
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-duration: 0.8s;
     -webkit-animation-play-state: paused;
-    animation-name: jumpingdots;
-    animation-duration: 0.8s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-play-state: paused;
     -o-animation-name: jumpingdots;
     -o-animation-timing-function: linear;
     -o-animation-duration: 0.8s;
     -o-animation-iteration-count: infinite;
     -o-animation-play-state: paused;
+    animation-name: jumpingdots;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
 }
 
 .dots1:hover+.dots span {
     -webkit-animation-play-state: running;
     -moz-animation-play-state: running;
-    animation-play-state: running;
     -o-animation-play-state: running;
-
+    animation-play-state: running;
 }
 
 .dots1:not(:hover)+.dots span {
     -webkit-animation-name: none;
     -moz-animation-name: none;
-    animation-name: none;
     -o-animation-name: none;
+    animation-name: none;
 }
 
 
 .dots span:nth-child(2) {
     -moz-animation-delay: 0.2s;
     -webkit-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s; 
     animation-delay: 0.2s;
-    -o-animation-delay: 0.2s;
 }
 
 .dots span:nth-child(3) {
     -moz-animation-delay: 0.4s;
     -webkit-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s; 
     animation-delay: 0.4s;
-    -o-animation-delay: 0.4s;
 }
 
 .dots span:nth-child(4) {
     -moz-animation-delay: 0.6s;
     -webkit-animation-delay: 0.6s;
-    animation-delay: 0.6s;
     -o-animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 
 @keyframes jumpingdots {
