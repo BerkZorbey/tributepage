@@ -20,6 +20,6 @@ function hiddennote(){
     var note=document.getElementById("note");
     note.hidden=true;
    if(note.hidden=true){
-        note1.hidden=true;
+       document.getElementById("note1").hidden=true;
     }
 }
