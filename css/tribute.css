@@ -96,7 +96,7 @@ li {
 
 li::before {
 
-    content: "\2666";
+    content: "♦ \fe0e";
     position: relative;
     color: var(--li-marker-color, #898ffd);
     padding: 10px;
