@@ -277,10 +277,10 @@ footer {
     margin-top: 40px;
     border: 2px solid #d3d4cd83;
     background-color: #d3d4cd8f;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     padding-left: 10px;
-
+    line-height: 40px;
 }
 
 #wiki {
