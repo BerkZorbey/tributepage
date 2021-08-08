@@ -1,0 +1,7 @@
+#img
+*.jpg
+*.png
+*.ico
+#video
+*.mp3
+*.ogg
